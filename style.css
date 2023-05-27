@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster+Two:ital@1&display=swap');
 
-h1 {
+.navbar-brand {
     font-family: 'Lobster Two', cursive;
+    padding-left: 10px;
+}
+main{
+    background-color: #02403Aff;
+}
+
+footer{
+    background-color: #EA6552ff;
 }
