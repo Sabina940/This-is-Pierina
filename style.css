@@ -37,18 +37,19 @@ header img{
 
 .h1-start{
     padding-top: 25%;
+    color: white;
 }
 .img-top{
     z-index: -200;
 }
 
-body{
-    color: white;
+main{
+    color: black;
 }
 
 
 
 .img-prof{
-    background-color: rgba(54, 79, 49, 50%);
+    background-color: #242206;
     border-radius: 500px;
 }
