@@ -1,14 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lobster+Two:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster+Two:ital@1&family=Orbitron&family=Raleway:wght@100&display=swap');
+
 
 .navbar-brand {
     font-family: 'Lobster Two', cursive;
     padding-left: 10px;
     color: #02403Aff;
+    font-weight: bold;
 }
-main{
-    background-color: #02403Aff;
+h2{
+
+    font-family: 'Raleway', sans-serif;
 }
 
 footer{
-    background-color: #EA6552ff;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navbar-toggler{
+    border: none;
+    color: rgba(0,0,0,0);
+
+}
+
+.active{
+    color: #EA6552ff !important;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+}
+
+header img{
+    position: relative;
+    object-fit: contain;
+}
+
+.h1-start{
+    padding-top: 25%;
+}
+.img-top{
+    z-index: -200;
+}
+
+body{
+    color: white;
+}
+
+.top-container{
+    background-color: rgba(54, 79, 49, 50%);
 }
