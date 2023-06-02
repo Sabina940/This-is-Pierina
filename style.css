@@ -46,6 +46,9 @@ body{
     color: white;
 }
 
-.top-container{
+
+
+.img-prof{
     background-color: rgba(54, 79, 49, 50%);
+    border-radius: 500px;
 }
