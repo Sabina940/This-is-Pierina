@@ -54,4 +54,18 @@ p{
     color: white;
 }
 
+.img-prof{
+    position: absolute;
+    top: 15%;
+    right: 3%;
+}
+
+@media screen and (max-width: 855px) {
+    .img-prof {
+        top: 10%;
+        left:auto;
+        right:3%;
+    }
+}
+
 
