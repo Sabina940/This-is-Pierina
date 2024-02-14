@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster+Two:ital@1&family=Orbitron&family=Raleway:wght@100&display=swap');
 
+.img-prof{
+    width: 0,5;
+    height: 0,5;
+    
+}
 
 .navbar-brand {
     font-family: 'Lobster Two', cursive;
@@ -39,17 +44,11 @@ header img{
     padding-top: 25%;
     color: white;
 }
-.img-top{
-    z-index: -200;
-}
+
 
 main{
-    color: black;
-}
-
-
-
-.img-prof{
+    color: white;
     background-color: #242206;
-    border-radius: 500px;
 }
+
+
