@@ -54,18 +54,20 @@ p{
     color: white;
 }
 
-.img-prof{
-    position: absolute;
-    top: 15%;
-    right: 3%;
+main .card{
+    background-color: #02403Aff;
+    border: none;
+
 }
 
-@media screen and (max-width: 855px) {
-    .img-prof {
-        top: 10%;
-        left:auto;
-        right:3%;
-    }
+.card-title{
+    font-weight: bold;
 }
+
+.card-text{
+    font-weight: lighter;
+}
+
+
 
 
