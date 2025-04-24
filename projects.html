@@ -1,0 +1,786 @@
+<!-- Projects Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster+Two:ital@1&family=Orbitron&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <title>Projects | Pierina Lopez</title>
+</head>
+<body>
+  <img src="favicon/android-chrome-512x512.png" alt="Menu" id="hamburger" class="hamburger-logo" />
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="favicon/android-chrome-512x512.png" alt="Logo" class="sidebar-logo" />
+        <h2 class="brand">Pierina Lopez</h2>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa fa-user"></i> About Me</a></li>
+          <li><a href="projects.html" class="active"><i class="fa fa-code"></i> Projects</a></li>
+          <li><a href="cv.html"><i class="fa fa-file"></i> CV</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content ">
+
+      <div class="projects-wrapper">
+
+        <section class="intro-card" data-aos="fade-up">
+          <div class="intro-content ">
+            <div class="intro-text">
+              <h1 class="h1-start typewriter">My Projects</h1>
+              <p>
+                Explore my projects by clicking on the images below to see more details.
+                Each project reflects a unique part of my journey — from IoT experiments and game design to web systems created with Agile teamwork.              
+              </p>
+
+              <p>
+                Whether it’s solving real-world problems with sensors, building engaging user experiences, or leading collaborative initiatives, every project showcases my growth as a creative and technical professional.
+
+              </p>
+            </div>
+          </div>
+        </section>
+        
+
+        <div class="masonry ">
+          <div class="masonry-item" data-bs-toggle="modal" data-bs-target="#projectModal1">
+            <img src="assets/img/iot (1).png" alt="Project 1 Thumbnail">
+            <div class="p-3">
+              <h5 class="mb-1">Face Recognition System</h5>
+              <p class="text-muted small">Raspberry Pi project with OpenCV and dlib.</p>
+            </div>
+          </div>
+          <div class="masonry-item" data-bs-toggle="modal" data-bs-target="#projectModal2">
+            <img src="assets/img/game1 (1).png" alt="Project 2 Thumbnail">
+            <div class="p-3">
+              <h5 class="mb-1">Spaceship E6 Game</h5>
+              <p class="text-muted small">Pixel-art game for education guidance.</p>
+            </div>
+          </div>
+          <div class="masonry-item" data-bs-toggle="modal" data-bs-target="#projectModal3">
+            <img src="assets/img/figma.png" alt="Project 3 Thumbnail">
+            <div class="p-3">
+              <h5 class="mb-1">CampusBridge</h5>
+              <p class="text-muted small">Streamlining Admissions for Incoming Degree & Exchange Students</p>
+            </div>
+          </div>
+
+          <div class="masonry-item" data-bs-toggle="modal" data-bs-target="#projectModal4">
+            <img src="assets/img/tank (2).png" alt="Project 3 Thumbnail">
+            <div class="p-3">
+              <h5 class="mb-1">Teletubbies Home</h5>
+              <p class="text-muted small">An IoT-powered aquarium that feeds fish, controls lights, measures depth, and streams live video—because even Teletubbies need automation!</p>
+            </div>
+          </div>
+
+          <div class="masonry-item" data-bs-toggle="modal" data-bs-target="#projectModal5">
+            <img src="assets/img/ws (1).png" alt="Project 3 Thumbnail">
+            <div class="p-3">
+              <h5 class="mb-1">Teletubbies Home</h5>
+              <p class="text-muted small">An IoT-powered aquarium that feeds fish, controls lights, measures depth, and streams live video—because even Teletubbies need automation!</p>
+            </div>
+          </div>
+          
+          <!-- Add more masonry-item blocks here for other projects -->
+        </div>
+      </div>
+    
+  </div>
+
+  <!--Project 1-->
+  <div class="modal fade w-100" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title section-title typewriter">Face Recognition System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="width-100 d-flex justify-content-center mb-3">
+            <div id="iotCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded shadow">
+                <div class="carousel-item active">
+                  <img src="assets/img/iot (1).png" class="d-block w-100" alt="Preview 1">
+                  
+                  
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/iot (2).png" class="d-block w-100" alt="Preview 2">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#iotCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#iotCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+          <!-- Accordion content -->
+          <div class="accordion" id="iotAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iotContext">
+                  Context & Goal
+                </button>
+              </h2>
+              <div id="iotContext" class="accordion-collapse collapse" data-bs-parent="#iotAccordion">
+                <div class="accordion-body">
+                  <p><strong>Context:</strong> Individual project for SKIL1 combining software and hardware to solve a real-world IoT challenge.</p>
+                  <p><strong>Goal:</strong> Welcome system using face recognition, light control, and notifications via SMS/email.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iotRole">
+                  My Role
+                </button>
+              </h2>
+              <div id="iotRole" class="accordion-collapse collapse" data-bs-parent="#iotAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Set up Raspberry Pi and light sensor.</li>
+                    <li>Integrated face recognition with OpenCV & dlib.</li>
+                    <li>Real-time alerts via Twilio (SMS) and Gmail (SMTP).</li>
+                    <li>Automated lighting system based on sensor feedback.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iotTech">
+                  Skills & Technologies
+                </button>
+              </h2>
+              <div id="iotTech" class="accordion-collapse collapse" data-bs-parent="#iotAccordion">
+                <div class="accordion-body">
+                  Python, OpenCV, dlib, Twilio, SMTP, Flask, GPIO, Agile.
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iotMade">
+                  What I Made
+                </button>
+              </h2>
+              <div id="iotMade" class="accordion-collapse collapse" data-bs-parent="#iotAccordion">
+                <div class="accordion-body">
+                  A complete prototype automating real-life tasks with AI and sensors.
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#iotLearned">
+                  What I Learned
+                </button>
+              </h2>
+              <div id="iotLearned" class="accordion-collapse collapse" data-bs-parent="#iotAccordion">
+                <div class="accordion-body">
+                  Integrating computer vision, automating devices, using APIs, and deploying embedded systems.
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Action Buttons -->
+          <div class="mt-4 d-flex flex-wrap gap-3">
+            <a href="https://youtu.be/hwamn3hPTVY?si=suaDxCcYDtc-m8G4" target="_blank" class="btn custom-btn-primary">
+              <i class="fa-solid fa-video me-2"></i>Watch on YouTube
+            </a>
+            <a href="assets/Projects-WH.zip" target="_blank" class="btn custom-btn-secondary" download>
+              <i class="fa-solid fa-download me-2"></i>Download Project Code
+            </a>
+          </div>
+            <!-- Add more accordion items for other sections -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Project 2-->
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title section-title typewriter">Spaceship E6 Game</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="width-100 d-flex justify-content-center mb-3">
+
+          <div id="carouselSpaceship" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow-sm border">
+              <div class="carousel-item active">
+                <img src="assets/img/game1 (1).png" class="d-block w-100" alt="Screenshot 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/game1 (2).png" class="d-block w-100" alt="Screenshot 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/game1 (3).png" class="d-block w-100" alt="Screenshot 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpaceship" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSpaceship" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+          
+          <div class="accordion" id="accordionSpaceship">
+            <!-- Context -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spaceContext">
+                  Context & Goal
+                </button>
+              </h2>
+              <div id="spaceContext" class="accordion-collapse collapse" data-bs-parent="#accordionSpaceship">
+                <div class="accordion-body">
+                  <strong>Context:</strong> Group project for the SKIL1 “Professional Skills” course.<br>
+                  <strong>Goal:</strong> Create a serious pixel-art game to help prospective students choose a Thomas More IT/ICT program.
+                </div>
+              </div>
+            </div>
+    
+            <!-- My Role -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spaceRole">
+                  My Role
+                </button>
+              </h2>
+              <div id="spaceRole" class="accordion-collapse collapse" data-bs-parent="#accordionSpaceship">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Developed the narrative and storyline.</li>
+                    <li>Designed visual direction and user experience in Unity.</li>
+                    <li>Coordinated Agile teamwork and kept track of progress.</li>
+                    <li>Presented final demo to instructors and students.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <!-- What I Made -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spaceMade">
+                  What I Made
+                </button>
+              </h2>
+              <div id="spaceMade" class="accordion-collapse collapse" data-bs-parent="#accordionSpaceship">
+                <div class="accordion-body">
+                  Designed character interactions, mockups, and UI animations. Coordinated how users progressed through story paths and puzzles.
+                </div>
+              </div>
+            </div>
+    
+            <!-- Skills -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spaceSkills">
+                  Skills & Technologies
+                </button>
+              </h2>
+              <div id="spaceSkills" class="accordion-collapse collapse" data-bs-parent="#accordionSpaceship">
+                <div class="accordion-body">
+                  Unity, C#, pixel art, UX design, storytelling, teamwork, Agile methods, presentation skills.
+                </div>
+              </div>
+            </div>
+    
+            <!-- Team -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spaceTeam">
+                  Team Contributions
+                </button>
+              </h2>
+              <div id="spaceTeam" class="accordion-collapse collapse" data-bs-parent="#accordionSpaceship">
+                <div class="accordion-body">
+                  <ul>
+                    <li><strong>Marcelina Siwka:</strong> UI artist, character dialogues, logic design.</li>
+                    <li><strong>Branko Van Tendeloo:</strong> Puzzle logic coding in Unity.</li>
+                    <li><strong>Johan Malm:</strong> Sound and audio implementation.</li>
+                    <li><strong>Theodore McCabe:</strong> Branching paths and character logic.</li>
+                    <li><strong>Pierina Lopez (me):</strong> Storyline, UI/UX flow, visual structure, task coordination.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Call to Action -->
+
+          
+          <div class="mt-4 d-flex gap-3 flex-wrap">
+            <a href="https://m.youtube.com/watch?v=1B3O-6NzIIs&feature=youtu.be" class="btn custom-btn-primary" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-video me-2"></i>Watch on YouTube
+            </a>
+          </div>
+        
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Project 3-->
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title section-title typewriter">CampusBridge</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="width-100 d-flex justify-content-center mb-3">  
+
+          <div id="carouselSkil2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="assets/img/figma.png" class="d-block w-100" alt="Figma design screenshot">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/page.png" class="d-block w-100" alt="PHP implementation screenshot">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/Jira.png" class="d-block w-100" alt="Jira board screenshot">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/team.jpg" class="d-block w-100" alt="Teamwork photo">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselSkil2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselSkil2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="accordion" id="accordionSkil2">
+              
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingContext">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContext">
+                Context & Objective
+              </button>
+            </h2>
+            <div id="collapseContext" class="accordion-collapse collapse" data-bs-parent="#accordionSkil2">
+              <div class="accordion-body">
+                Group project for SKIL2 – building a system for the International Office to simplify admin processes for new international students. Based on an inherited concept, our team restructured and modernized the entire approach.
+              </div>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTeam">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTeam">
+                Team Setup & Agile Workflow
+              </button>
+            </h2>
+            <div id="collapseTeam" class="accordion-collapse collapse" data-bs-parent="#accordionSkil2">
+              <div class="accordion-body">
+                We followed Agile methodology, using Jira for sprint planning and retrospectives. 
+                <ul>
+                  <li><strong>Scrum Master:</strong> Pierina López Monserrate</li>
+                  <li><strong>Document Lead:</strong> Ravin Shalmashi</li>
+                  <li><strong>Developers:</strong> Alexandros Giorginis, Marin Janushaj, Esma Akbaş, Maciej Chuchra</li>
+                </ul>
+                <p>Highlights: smooth team coordination, open feedback, consistent progress review.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingRole">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRole">
+                My Role
+              </button>
+            </h2>
+            <div id="collapseRole" class="accordion-collapse collapse" data-bs-parent="#accordionSkil2">
+              <div class="accordion-body">
+                As Scrum Master, I facilitated sprints, coordinated the team’s direction, and led retrospectives. I also oversaw updating the analysis, UML diagrams, data models, and guided the Figma design and PHP page development.
+              </div>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingBuilt">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBuilt">
+                What We Built
+              </button>
+            </h2>
+            <div id="collapseBuilt" class="accordion-collapse collapse" data-bs-parent="#accordionSkil2">
+              <div class="accordion-body">
+                A full web system including:
+                <ul>
+                  <li>Buddy assignment request and approval</li>
+                  <li>Bike rentals and landlord profile management</li>
+                  <li>Admin panel for managing students and nominations</li>
+                </ul>
+                <p>Front-end: HTML/CSS/Bootstrap. Back-end: PHP & MySQL.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingLearned">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLearned">
+                What I Learned
+              </button>
+            </h2>
+            <div id="collapseLearned" class="accordion-collapse collapse" data-bs-parent="#accordionSkil2">
+              <div class="accordion-body">
+                - Leading Agile retrospectives and resolving team friction<br>
+                - Adapting and improving inherited projects<br>
+                - Balancing stakeholder needs with technical limitations<br>
+                - Cross-functional collaboration and timeline control
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Links -->
+        <div class="mt-4 d-flex gap-3 flex-wrap">
+          <a href="assets/Analysis and design report EN_template.pdf" class="btn custom-btn-secondary" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-eye me-2"></i> View Project Analysis
+          </a>
+          <a href="https://www.figma.com/proto/OAYAal5AZPlCSPGeTaXiSr/CampusBridge?node-id=504-3229&p=f&t=l81dts0LBgyqvBIb-1&scaling=min-zoom&content-scaling=fixed&page-id=253%3A2957&starting-point-node-id=504%3A3229&show-proto-sidebar=1" class="btn custom-btn-secondary" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-eye me-2"></i> View Figma Design
+          </a>
+        </div>
+
+
+          
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Project 4-->
+  <div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title section-title typewriter">Teletubbies Home</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+
+
+          <!-- Carousel for Teletubbies Home -->
+
+
+          <div class="width-100 d-flex justify-content-center mb-3">  
+
+            <div id="Teletubbies" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="assets/img/tank (1).png" class="d-block w-100" alt="Figma design screenshot">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/tank (2).png" class="d-block w-100" alt="PHP implementation screenshot">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/tank (3).png" class="d-block w-100" alt="Jira board screenshot">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/tank (4).png" class="d-block w-100" alt="Teamwork photo">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#Teletubbies" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#Teletubbies" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+  
+          </div>
+          
+
+          
+
+          
+          <!-- content-->
+           <!-- Accordion for Teletubbies Home -->
+              <div class="accordion" id="accordionTeletubbies">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ttGoal">
+                      Context & Goal
+                    </button>
+                  </h2>
+                  <div id="ttGoal" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>This IoT-based project automates an aquarium: feeding fish, controlling a lamp, filling the tank, monitoring depth, displaying data on an LCD, and live-streaming the aquarium remotely via Remote.it.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ttRole">
+                      My Role
+                    </button>
+                  </h2>
+                  <div id="ttRole" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Built the complete system and connected all electronic components.</li>
+                        <li>Wrote Python code to control pump, lamp, feeder, and depth sensing.</li>
+                        <li>Designed a live-streaming web interface using Flask and OpenCV.</li>
+                        <li>Configured Remote.it for remote access to the Raspberry Pi camera.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ttTech">
+                      Skills & Technologies
+                    </button>
+                  </h2>
+                  <div id="ttTech" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Python 3.8, Flask, OpenCV, Adafruit libraries</li>
+                        <li>Raspberry Pi 4, Camera Module, Relay Board, Stepper Motor</li>
+                        <li>LCD Nokia 5110 display, depth sensor (ultrasonic), Remote.it</li>
+                        <li>GPIO, web.py, LCD rendering, modular Python scripts</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ttWhatIMade">
+                      What I Made
+                    </button>
+                  </h2>
+                  <div id="ttWhatIMade" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <p>A fully integrated IoT aquarium system with:</p>
+                      <ul>
+                        <li>Live camera stream accessible globally</li>
+                        <li>Physical buttons for feeding and lamp toggle</li>
+                        <li>Depth detection to trigger pumping actions</li>
+                        <li>LCD display for live sensor data and countdown</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ttLearned">
+                      What I Learned
+                    </button>
+                  </h2>
+                  <div id="ttLearned" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>GPIO programming and physical component wiring</li>
+                        <li>Python multiprocessing and modular script structure</li>
+                        <li>Webcam streaming with OpenCV and Flask routing</li>
+                        <li>Remote monitoring and real-time automation</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+
+              <div class="mt-4 d-flex gap-3 flex-wrap">
+                <a href="https://youtu.be/rByk1QHVK5k" class="btn custom-btn-primary" target="_blank">
+                  <i class="fa-solid fa-video me-2"></i>Watch on YouTube
+                </a>
+                <a href="assets/TeletubiesHome.pdf" class="btn custom-btn-secondary" download>
+                  <i class="fa-solid fa-download me-2"></i>Download Project Code
+                </a>
+              </div>
+              
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Project 5-->
+  <div class="modal fade" id="projectModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Project Title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Carousel for weather station -->
+
+
+          <div class="width-100 d-flex justify-content-center mb-3">  
+
+            <div id="ws" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img src="assets/img/ws (1).png" class="d-block w-100" alt="Figma design screenshot">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/ws (2).png" class="d-block w-100" alt="PHP implementation screenshot">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/ws (3).png" class="d-block w-100" alt="Jira board screenshot">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#ws" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#ws" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+  
+          </div>
+          
+
+
+
+
+
+
+          <div class="accordion" id="weatherAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#weatherContext">
+                  Context & Goal
+                </button>
+              </h2>
+              <div id="weatherContext" class="accordion-collapse collapse " data-bs-parent="#weatherAccordion">
+                <div class="accordion-body">
+                  This Weather Station measures temperature, pressure, and light levels using an ESP32 and displays live sensor data on a local website. Historical data is logged to the Ubidots platform, which also handles email notifications for sensor events.
+                </div>
+              </div>
+            </div>
+          
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#weatherRole">
+                  My Role
+                </button>
+              </h2>
+              <div id="weatherRole" class="accordion-collapse collapse" data-bs-parent="#weatherAccordion">
+                <div class="accordion-body">
+                  I designed the full system architecture, connected sensors, coded the ESP32 logic in C++, set up web visualization using HTML/CSS, and configured the MQTT protocol with Ubidots.
+                </div>
+              </div>
+            </div>
+          
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#weatherTech">
+                  Skills & Technologies
+                </button>
+              </h2>
+              <div id="weatherTech" class="accordion-collapse collapse" data-bs-parent="#weatherAccordion">
+                <div class="accordion-body">
+                  ESP32 · BH1750 & BMP280 sensors · C++ · HTML/CSS · MQTT · PlatformIO · Ubidots · Visual Studio Code · Web server & APIs · IoT data handling.
+                </div>
+              </div>
+            </div>
+          
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#weatherMade">
+                  What I Made
+                </button>
+              </h2>
+              <div id="weatherMade" class="accordion-collapse collapse" data-bs-parent="#weatherAccordion">
+                <div class="accordion-body">
+                  A complete IoT system that collects environmental data and shares it both locally via an embedded web server and remotely through Ubidots. I also built email alert capabilities and a clean web interface showing real-time values.
+                </div>
+              </div>
+            </div>
+          
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#weatherLearned">
+                  What I Learned
+                </button>
+              </h2>
+              <div id="weatherLearned" class="accordion-collapse collapse" data-bs-parent="#weatherAccordion">
+                <div class="accordion-body">
+                  - How to use MQTT and send data from ESP32 to cloud platforms.<br>
+                  - How to build real-time dashboards and integrate sensor data.<br>
+                  - How to write modular C++ code for IoT projects and host web content on embedded systems.
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+            <!-- Action Buttons -->
+
+            <div class="mt-4 d-flex gap-3 flex-wrap">
+              <a href="https://youtu.be/CUPVl6ACsKQ" class="btn custom-btn-primary" target="_blank">
+                <i class="fa-solid fa-video me-2"></i>Watch on YouTube
+              </a>
+              <a href="assets/weatherstation.pdf" class="btn custom-btn-secondary" download>
+                <i class="fa-solid fa-download me-2"></i>Download Project Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

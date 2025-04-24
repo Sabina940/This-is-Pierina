@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster+Two:ital@1&family=Orbitron&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pierina Lopez | Portfolio</title>
+
+    <style>
+    body {
+      background-color: #f4f6f9;
+      font-family: 'Raleway', sans-serif;
+    }
+    .main-content {
+      margin-left: 200px;
+      padding: 40px 20px;
+    }
+    .cv-wrapper {
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2rem;
+      color: #1f3a60;
+      margin-bottom: 2rem;
+    }
+    .intro-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .intro-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto 60px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #1f3a60;
+      transform: translateX(-50%);
+    }
+    .timeline-item {
+      padding: 20px 40px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+    }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+    }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #e26d5c;
+      border: 3px solid white;
+      z-index: 1;
+    }
+    .timeline-item:nth-child(odd)::before {
+      right: -10px;
+    }
+    .timeline-item:nth-child(even)::before {
+      left: -10px;
+    }
+    .timeline-content {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .timeline-content h5 {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .timeline-content:hover {
+        transform: scale(1.02);
+        transition: transform 0.3s ease-in-out;
+      }
+
+    .lang-skill-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    
+    .lang-section, .skill-section {
+      flex: 1;
+    }
+    .lang-bar {
+      background: #d3d3d3;
+      height: 8px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .lang-bar-inner {
+      height: 100%;
+      background: #1f3a60;
+    }
+
+    
+    .modal-dialog {
+        display: flex;
+        max-width: 800px;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .modal-content {
+        margin: auto;
+      }
+
+      .skill-badge {
+      background: #fff;
+      border: 1px solid #1f3a60;
+      border-radius: 30px;
+      padding: 0.4em 1em;
+      margin: 0.3em;
+      display: inline-block;
+      font-size: 0.9rem;
+      color: #1f3a60;
+      transition: all 0.2s ease;
+    }
+    .skill-badge:hover {
+      background-color: #e26d5c;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+
+    
+  </style>
+</head>
+    <body>
+        <!-- Hamburger Menu for Mobile -->
+        <img src="favicon/android-chrome-512x512.png" alt="Menu" id="hamburger" class="hamburger-logo" />
+
+      
+        <div class="app-container">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <div class="logo">
+              <img src="favicon/android-chrome-512x512.png" alt="Pierina Lopez Logo" class="sidebar-logo" />
+              <h2 class="brand">Pierina Lopez</h2>
+            </div>
+            <nav class="nav">
+              <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i> About Me</a></li>
+                <li><a href="projects.html" ><i class="fa fa-code"></i> Projects</a></li>
+                <li><a href="cv.html" class="active"><i class="fa fa-file"></i> CV</a></li>
+              </ul>
+            </nav>
+          </aside>
+      
+          <!-- Main content -->
+          <main class="main-content">
+            <div class="cv-wrapper">
+              <div class="intro-card">
+                <img src="favicon/android-chrome-512x512.png" alt="Profile Icon" />
+                <h1 class="section-title">Curriculum Vitae</h1>
+                <p>Creative tech mind with an architecture background, building cross-disciplinary ideas across Europe. Focused on user experience, visual storytelling, and impactful digital tools.</p>
+              </div>
+
+
+              <div class="timeline">
+                <div class="timeline-item" >
+                  <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#job1Modal">
+                    <h5 class="typewriter">Post Restaurant – 2025</h5>
+                  </div>
+                </div>
+                <div class="timeline-item" >
+                  <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#job2Modal"><h5 class="typewriter">THE BIG C. – 2022</h5></div>
+                </div>
+                <div class="timeline-item" >
+                  <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#job3Modal"><h5 class="typewriter">WAO Architecture – 2019</h5></div>
+                </div>
+                <div class="timeline-item" >
+                  <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#job4Modal"><h5 class="typewriter">TEKTUM Arquitectura – 2018</h5></div>
+                </div>
+                <div class="timeline-item" >
+                  <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#job5Modal">
+                    <h5 class="typewriter">INSTITUTO METROPOLITANO</h5>
+                    <h5 class="typewriter">DE PLANIFICACIÓN – IMP – 2018</h5>
+                  </div>
+                </div>
+                <div class="timeline-item" >
+                  <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#job6Modal">
+                    <h5 class="typewriter">INSTITUTO METROPOLITANO</h5>
+                    <h5 class="typewriter">DE PLANIFICACIÓN – IMP – 2017</h5>
+                  </div>
+                </div>
+              </div>
+        
+              
+      
+              <div class="lang-skill-wrapper">
+                <section class="lang-section">
+                  <h2 class="h4">Languages</h2>
+                  <label>Spanish</label>
+                  <div class="lang-bar"><div class="lang-bar-inner" style="width: 100%;"></div></div>
+    
+                  <label>English</label>
+                  <div class="lang-bar"><div class="lang-bar-inner" style="width: 80%;"></div></div>
+    
+                  <label>Dutch</label>
+                  <div class="lang-bar"><div class="lang-bar-inner" style="width: 30%;"></div></div>
+                </section>
+    
+                <section class="skill-section">
+                  <h2 class="h4">Skills</h2>
+                  <div class="skill-badge"><i class="fa-solid fa-ruler-combined"></i> AutoCAD</div>
+                  <div class="skill-badge"><i class="fa-solid fa-pencil"></i> Revit</div>
+                  <div class="skill-badge"><i class="fa-solid fa-table"></i> Excel</div>
+                  <div class="skill-badge"><i class="fa-brands fa-python"></i> Python</div>
+                  <div class="skill-badge"><i class="fa-solid fa-code"></i> C++</div>
+                  <div class="skill-badge"><i class="fa-brands fa-html5"></i> HTML/CSS</div>
+                  <div class="skill-badge"><i class="fa-solid fa-microchip"></i> PlatformIO</div>
+                  <div class="skill-badge"><i class="fa-solid fa-comments"></i> Communication</div>
+                  <div class="skill-badge"><i class="fa-solid fa-user-tie"></i> Customer Service</div>
+                  <div class="skill-badge"><i class="fa-solid fa-chart-line"></i> Leadership</div>
+                  <div class="skill-badge"><i class="fa-solid fa-diagram-project"></i> Project Supervision</div>
+
+                  <div class="skill-badge"><i class="fa-solid fa-comments-dollar"></i>Sales</div>
+                  <div class="skill-badge"><i class="fa-solid fa-sitemap"></i>Strategic Planning</div>
+                  <div class="skill-badge"><i class="fa-solid fa-cloud"></i>IoT Projects</div>
+                  <div class="skill-badge"><i class="fa-solid fa-robot"></i>Automation</div>
+                  <div class="skill-badge"><i class="fa-brands fa-linux"></i>Raspberry Pi</div>
+                  <div class="skill-badge"><i class="fa-brands fa-figma"></i>Figma</div>
+                  <div class="skill-badge"><i class="fa-brands fa-git-alt"></i>Git / GitHub</div>
+                  <div class="skill-badge"><i class="fa-solid fa-user-group"></i>Agile / Scrum</div>
+                  <div class="skill-badge"><i class="fa-solid fa-diagram-project"></i>Software Modeling & Design</div>
+                  <div class="skill-badge"><i class="fa-brands fa-java"></i>Java Development</div>
+                  <div class="skill-badge"><i class="fa-solid fa-database"></i>Data Engineering</div>
+                  <div class="skill-badge"><i class="fa-solid fa-chart-line"></i>Data Visualization</div>
+                  <div class="skill-badge"><i class="fa-solid fa-diagram-next"></i>UML</div>
+                  <div class="skill-badge"><i class="fa-solid fa-gear"></i>Business Processes & ITIL</div>
+                  <div class="skill-badge"><i class="fa-brands fa-linux"></i>Linux</div>
+                  <div class="skill-badge"><i class="fa-brands fa-php"></i>PHP</div>
+                  <div class="skill-badge"><i class="fa-solid fa-cloud-arrow-up"></i>Cloud / AI</div>
+                </section>
+              </div>
+      
+              <section class="mb-5 ">
+                <h2 class="h4">Download CV</h2>
+                <a href="assets/cv/Pierina Lopez Resume 2024 (1).pdf" class="btn btn-danger" download>
+                  <i class="fa-solid fa-download me-2"></i>Download CV (PDF)
+                </a>
+              </section>
+            </div>
+          </main>
+
+
+        </div>
+
+        <!-- Modals -->
+  <div class="modal fade" id="job1Modal" tabindex="-1" aria-labelledby="job1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job1Label">Post Restaurant – Bartender</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Feb 2025 – Present<br>
+          <ul>
+            <li>Prepared a variety of cocktails, mixed drinks, and non-alcoholic beverages to meet customers' preferences.</li>
+            <li>Provided attentive table service and took customer orders in a high-end, fast-paced environment.</li>
+            <li>Managed bar stock, ensuring inventory accuracy and coordinating with suppliers for timely replenishment.</li>
+            <li>Enhanced customer satisfaction by recommending drink pairings.</li>
+            <li>Maintained a clean and organized bar area, adhering to hygiene and safety standards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="job2Modal" tabindex="-1" aria-labelledby="job2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job2Label">THE BIG C.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          OCT 2022 - PRESENT<br>
+
+          <ul>
+            <li>Make and serve coffee, tea, and specialty beverages.</li>
+            <li>Take customer orders and payments.</li>
+            <li>Clean and sanitize their work areas</li>
+            <li>Set areas and equipment/tools.</li>
+
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="job3Modal" tabindex="-1" aria-labelledby="job3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job3Label">WAO Architecture – Assistant Architect</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Jun 2019 – Mar 2020<br>
+          
+          <ul>
+            <li>Devised overall strategy for documentation and identified design sets planned for each stage of work including as-built designs and final building information models (BIM).</li>
+            <li>Verified construction documentation conformed to quality assurance standards and client requirements.</li>
+            <li>Construction Supervisor</li>
+            <li>Eliminated project lags by inspecting work-in-progress, tracking lead times, and testing work to achieve quality control specifications.</li>
+            <li>Collaborated with management, technical crew members, and fellow supervisors to organize efficient operations and achieve demanding schedule targets.</li>
+            <li>Maintained safe practices and operated within budget constraints by training construction workers on best practices and established protocols.</li>
+            <li>Sustained safety protocols, ensuring proper, cost-effective, and safe handling and usage of equipment and materials.</li>
+            <li>Implemented emergency programs to eliminate obstacles to success.</li>
+            <li>Identified and implemented strategic plans based on accurate readings of specifications and solid collaboration with project leadership.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="job4Modal" tabindex="-1" aria-labelledby="job4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job4Label">TEKTUM Arquitectura – Assistant Architect</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Mar 2018 – May 2019<br>
+          <ul>
+            <li>Created, printed, and modified drawings in AutoCAD and Revit.</li>
+            <li>Devised overall strategy for documentation and identified design sets planned for each stage of work including as-built designs and final building information models (BIM).</li>
+            <li>Verified construction documentation conformed to quality assurance standards and client requirements.</li>
+            <li>Provided clerical and administrative support to senior architectural staff.</li>
+            <li>Created and delivered project presentations to stakeholders.</li>
+            <li>Read project plans and estimated costs.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="job5Modal" tabindex="-1" aria-labelledby="job4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job5Label">Instituto Metropolitano de Planificacion IMP – Urban Planner Assistant</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Jun 2017 – Mar 2018<br>
+          <ul>
+            <li>Assistant in Urban Planning for the development of the Urban Plan of San Borja</li>
+            <li>Used critical thinking to break down problems, evaluate solutions, and make decisions.</li>
+            <li>Identified issues, analyzed information, and provided solutions to problems.</li>
+            <li>Used coordination and planning skills to achieve results according to schedule.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="job6Modal" tabindex="-1" aria-labelledby="job4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="job6Label">Instituto Metropolitano de Planificacion IMP – Urban Planner Assistant</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          May 2017 – Dec 2017<br>
+          <ul>
+            <li>Urban Planning Assistant for the study of Lima Metropolitana and the Virtual Platform Meta 18</li>
+            <li>Managed project timelines, filing documents properly and on time.</li>
+            <li>Developed presentations to demonstrate planning initiatives and research.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+        <script src="js/main.js"></script>
+    </body>
+</html>
