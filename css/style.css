@@ -539,6 +539,11 @@ h5{
     justify-content: center;
     align-items: center;
   }
+
+  .typewriter {
+    white-space: normal; /* Allow text to wrap */
+    overflow: visible; /* No hidden overflow */
+  }
  
   
   .masonry {
@@ -557,6 +562,11 @@ h5{
 
   .sidebar.open {
     left: 0;
+  }
+
+  .nav hover,
+  .nav active {
+    color: #e26d5c;
   }
 
   .hamburger-logo {
